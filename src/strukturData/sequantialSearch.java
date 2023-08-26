@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class sequantialSearch {
     String[] data = { "Jeruk", "Salak", "Durian", "Semangka", "Mangga", "Salak" };
 
+    // View Search Data
     void viewSearch(String input) {
         for (int i = 0; i < data.length; i++) {
             int comparrison = input.compareToIgnoreCase(data[i]);
@@ -15,6 +16,7 @@ public class sequantialSearch {
         }
     }
 
+    // Menghitung banyak data yang ditemukan
     void hitungSearch(String input) {
         int x = 0;
         for (int i = 0; i < data.length; i++) {
@@ -34,6 +36,5 @@ public class sequantialSearch {
         String inputData = input.nextLine();
 
         data1.viewSearch(inputData);
-
     }
 }
